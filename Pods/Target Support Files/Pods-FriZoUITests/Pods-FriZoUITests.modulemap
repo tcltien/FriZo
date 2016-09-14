@@ -1,0 +1,6 @@
+framework module Pods_FriZoUITests {
+  umbrella header "Pods-FriZoUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
