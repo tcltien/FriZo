@@ -291,15 +291,18 @@
 					B8C949311D86DAB700015A54 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 38TWKN4D2T;
+						LastSwiftMigration = 0800;
 					};
 					B8C949451D86DAB700015A54 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 38TWKN4D2T;
+						LastSwiftMigration = 0800;
 						TestTargetID = B8C949311D86DAB700015A54;
 					};
 					B8C949501D86DAB700015A54 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 38TWKN4D2T;
+						LastSwiftMigration = 0800;
 						TestTargetID = B8C949311D86DAB700015A54;
 					};
 				};
@@ -630,6 +633,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Com.FriZo.FriZo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -642,6 +646,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Com.FriZo.FriZo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -654,6 +659,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Com.FriZo.FriZoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FriZo.app/FriZo";
 			};
 			name = Debug;
@@ -667,6 +673,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Com.FriZo.FriZoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FriZo.app/FriZo";
 			};
 			name = Release;
@@ -679,6 +686,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Com.FriZo.FriZoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = FriZo;
 			};
 			name = Debug;
@@ -691,6 +699,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Com.FriZo.FriZoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = FriZo;
 			};
 			name = Release;
