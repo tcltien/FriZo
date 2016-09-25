@@ -19,6 +19,8 @@ class ChatViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
+        
+        
     }
     
 
@@ -55,7 +57,6 @@ class ChatViewController: UIViewController {
     }
 
     @IBAction func onTap(_ sender: UITapGestureRecognizer) {
-        
         view.endEditing(true)
     }
 

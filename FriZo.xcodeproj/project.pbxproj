@@ -10,7 +10,10 @@
 		3771117B8E8F6E301D38BF6C /* Pods_FriZo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54DA14C5281737B20C9370C4 /* Pods_FriZo.framework */; };
 		51885BDDF4AB8C2BF7C4EB31 /* Pods_FriZoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01E724B90F36735F197E3909 /* Pods_FriZoTests.framework */; };
 		8F8C9A19BE0F4766A1DE4431 /* Pods_FriZoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD01AADCC02CA70219D57844 /* Pods_FriZoUITests.framework */; };
+		B80F18AE1D9780CF007431BA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80F18AD1D9780CF007431BA /* LoginViewController.swift */; };
 		B86199CB1D92EA40004253AE /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86199CA1D92EA40004253AE /* ChatViewController.swift */; };
+		B8B09A161D96C9A30039BD7F /* UserPicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B09A151D96C9A30039BD7F /* UserPicCell.swift */; };
+		B8B09A1A1D96CA5F0039BD7F /* UserInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B09A191D96CA5F0039BD7F /* UserInformationViewController.swift */; };
 		B8C949361D86DAB700015A54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C949351D86DAB700015A54 /* AppDelegate.swift */; };
 		B8C9493B1D86DAB700015A54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8C949391D86DAB700015A54 /* Main.storyboard */; };
 		B8C9493D1D86DAB700015A54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8C9493C1D86DAB700015A54 /* Assets.xcassets */; };
@@ -47,7 +50,10 @@
 		54DA14C5281737B20C9370C4 /* Pods_FriZo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FriZo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C8E3DC8CDC09966A761AB3D /* Pods-FriZoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FriZoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FriZoUITests/Pods-FriZoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B4F4B829959CC012340200DF /* Pods-FriZo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FriZo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FriZo/Pods-FriZo.debug.xcconfig"; sourceTree = "<group>"; };
+		B80F18AD1D9780CF007431BA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B86199CA1D92EA40004253AE /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		B8B09A151D96C9A30039BD7F /* UserPicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPicCell.swift; sourceTree = "<group>"; };
+		B8B09A191D96CA5F0039BD7F /* UserInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInformationViewController.swift; sourceTree = "<group>"; };
 		B8C949321D86DAB700015A54 /* FriZo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FriZo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8C949351D86DAB700015A54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8C9493A1D86DAB700015A54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -193,6 +199,8 @@
 			children = (
 				B8C949701D86DCB600015A54 /* MapViewController.swift */,
 				B86199CA1D92EA40004253AE /* ChatViewController.swift */,
+				B8B09A191D96CA5F0039BD7F /* UserInformationViewController.swift */,
+				B80F18AD1D9780CF007431BA /* LoginViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -200,6 +208,7 @@
 		B8C949671D86DB3D00015A54 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B8B09A151D96C9A30039BD7F /* UserPicCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -483,8 +492,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8C9496B1D86DB9200015A54 /* User.swift in Sources */,
+				B8B09A1A1D96CA5F0039BD7F /* UserInformationViewController.swift in Sources */,
 				B8C949361D86DAB700015A54 /* AppDelegate.swift in Sources */,
 				B8C949711D86DCB600015A54 /* MapViewController.swift in Sources */,
+				B80F18AE1D9780CF007431BA /* LoginViewController.swift in Sources */,
+				B8B09A161D96C9A30039BD7F /* UserPicCell.swift in Sources */,
 				B86199CB1D92EA40004253AE /* ChatViewController.swift in Sources */,
 				B8C949691D86DB6800015A54 /* Session.swift in Sources */,
 			);
