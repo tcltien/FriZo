@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -114,17 +115,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="RdZ-bc-jN1"/>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvV-eb-naJ">
-                                <frame key="frameInset" minX="16" minY="625" width="96" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvV-eb-naJ">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="6f5-uh-GfQ"/>
+                                    <constraint firstAttribute="width" constant="98" id="pNc-HK-TuM"/>
+                                </constraints>
                                 <state key="normal" title="Chat"/>
                                 <connections>
                                     <segue destination="UB3-tx-xFZ" kind="show" id="KQ2-V9-QJY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TaM-m8-ZwI">
-                                <frame key="frameInset" minX="263" minY="625" width="96" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TaM-m8-ZwI">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="98" id="Dvf-y8-Vkb"/>
+                                    <constraint firstAttribute="height" constant="50" id="SXO-CI-fy8"/>
+                                </constraints>
                                 <state key="normal" title="SOS"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cwj-yL-FEa">
@@ -135,16 +140,25 @@
                                     <segue destination="AIN-Oa-J4D" kind="show" id="XlH-OD-qQR"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ctH-ih-xAg">
-                                <frame key="frameInset" minX="139" minY="625" width="96" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ctH-ih-xAg">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3tQ-Ae-lYd"/>
+                                    <constraint firstAttribute="width" constant="98" id="dLH-xR-ZuT"/>
+                                </constraints>
                                 <state key="normal" title="Warning"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="ctH-ih-xAg" firstAttribute="centerY" secondItem="hvV-eb-naJ" secondAttribute="centerY" id="0Kg-4V-sVE"/>
                             <constraint firstItem="3yM-zV-73X" firstAttribute="top" secondItem="RdZ-bc-jN1" secondAttribute="bottom" constant="50" id="4ri-Jm-u4J"/>
+                            <constraint firstItem="hvV-eb-naJ" firstAttribute="leading" secondItem="RKH-SK-chK" secondAttribute="leadingMargin" constant="5" id="9Hs-ZR-eZ4"/>
+                            <constraint firstItem="3yM-zV-73X" firstAttribute="top" secondItem="hvV-eb-naJ" secondAttribute="bottom" constant="5" id="CUo-Eb-I4N"/>
+                            <constraint firstItem="3yM-zV-73X" firstAttribute="top" secondItem="TaM-m8-ZwI" secondAttribute="bottom" constant="5" id="KWq-Es-dlX"/>
+                            <constraint firstAttribute="trailing" secondItem="TaM-m8-ZwI" secondAttribute="trailing" constant="5" id="P76-ua-Gov"/>
                             <constraint firstItem="RdZ-bc-jN1" firstAttribute="leading" secondItem="RKH-SK-chK" secondAttribute="leading" id="TXk-4G-Qtb"/>
+                            <constraint firstItem="TaM-m8-ZwI" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ctH-ih-xAg" secondAttribute="trailing" constant="30" id="YxC-1f-g0a"/>
+                            <constraint firstItem="ctH-ih-xAg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hvV-eb-naJ" secondAttribute="trailing" constant="25" id="dSd-sS-Jem"/>
                             <constraint firstItem="RdZ-bc-jN1" firstAttribute="top" secondItem="H9x-C9-IAO" secondAttribute="bottom" id="mAv-Tg-eeR"/>
                             <constraint firstAttribute="trailing" secondItem="RdZ-bc-jN1" secondAttribute="trailing" id="reS-LJ-Btl"/>
                         </constraints>
@@ -162,7 +176,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A0P-Ig-6k8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="342" y="112"/>
+            <point key="canvasLocation" x="341.60000000000002" y="111.99400299850076"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="bMA-CN-p10">
