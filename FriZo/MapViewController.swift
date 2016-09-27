@@ -8,30 +8,26 @@
 
 import UIKit
 import MapKit
+
 class MapViewController: UIViewController {
 
     @IBOutlet var MapView: MKMapView!
+    @IBOutlet weak var userAvatarButton: UIButton!
+    @IBOutlet weak var userPicHConstraint: NSLayoutConstraint!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let settingButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.action, target: <#T##Any?#>, action: <#T##Selector?#>)
+        userAvatarButton.layer.cornerRadius = userPicHConstraint.constant/2
+        userAvatarButton.setImage(UIImage(named: "avatarx2"), for: .normal)
+        userAvatarButton.clipsToBounds = true
 
-        // Do any additional setup after loading the view.
+        
+        navigationItem.leftBarButtonItem = button
+
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

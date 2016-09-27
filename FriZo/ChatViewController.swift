@@ -10,7 +10,6 @@ import UIKit
 
 class ChatViewController: UIViewController {
     
-    
     @IBOutlet weak var bottomHeight: NSLayoutConstraint!
     @IBOutlet var chatTextView: UITextView!
 
@@ -21,15 +20,12 @@ class ChatViewController: UIViewController {
         
     }
     
-
-   
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShowNotification(notification:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
 
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHideNotification(notification:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
-
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -55,7 +51,6 @@ class ChatViewController: UIViewController {
     }
 
     @IBAction func onTap(_ sender: UITapGestureRecognizer) {
-        
         view.endEditing(true)
     }
 
